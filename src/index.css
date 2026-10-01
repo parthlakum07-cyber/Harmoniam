@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-amber-50 min-h-screen font-sans antialiased select-none overflow-x-hidden;
+    background: radial-gradient(circle at 50% 10%, #1c1510 0%, #0c0a08 60%, #050403 100%);
+  }
+}
+
+/* Harmonium Key Active States (Amber/Teak Theme) */
+.key-white-active {
+  background: linear-gradient(to bottom, #fef3c7 0%, #fde68a 100%) !important;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(2px) !important;
+  border-color: #d97706 !important;
+}
+
+.key-black-active {
+  background: linear-gradient(to bottom, #27272a 0%, #18181b 100%) !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(245, 158, 11, 0.3) !important;
+  transform: translateY(2px) scale(0.98) !important;
+  border-color: #f59e0b !important;
+}
+
+/* Bright Piano Active States (Cyan/Soft-Blue Theme) */
+.key-piano-white-active {
+  background: linear-gradient(to bottom, #e0f2fe 0%, #bae6fd 100%) !important;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4), 0 0 12px rgba(56, 189, 248, 0.6) !important;
+  transform: translateY(2px) !important;
+  border-color: #0284c7 !important;
+}
+
+.key-piano-black-active {
+  background: linear-gradient(to bottom, #0f172a 0%, #0284c7 100%) !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 14px rgba(56, 189, 248, 0.7) !important;
+  transform: translateY(2px) scale(0.98) !important;
+  border-color: #38bdf8 !important;
+}
+
+/* Pure Strings Active States (Warm Green-Gold Theme) */
+.key-strings-white-active {
+  background: linear-gradient(to bottom, #ecfdf5 0%, #a7f3d0 100%) !important;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4), 0 0 12px rgba(16, 185, 129, 0.6) !important;
+  transform: translateY(2px) !important;
+  border-color: #059669 !important;
+}
+
+.key-strings-black-active {
+  background: linear-gradient(to bottom, #064e3b 0%, #047857 100%) !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 14px rgba(52, 211, 153, 0.7) !important;
+  transform: translateY(2px) scale(0.98) !important;
+  border-color: #10b981 !important;
+}
+
+/* Pure Flute Active States (Soft Sky-Teal Theme) */
+.key-flute-white-active {
+  background: linear-gradient(to bottom, #f0fdfa 0%, #99f6e4 100%) !important;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.4), 0 0 12px rgba(20, 184, 166, 0.6) !important;
+  transform: translateY(2px) !important;
+  border-color: #0d9488 !important;
+}
+
+.key-flute-black-active {
+  background: linear-gradient(to bottom, #115e59 0%, #0f766e 100%) !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 14px rgba(45, 212, 191, 0.7) !important;
+  transform: translateY(2px) scale(0.98) !important;
+  border-color: #14b8a6 !important;
+}
+
+/* Wood & Frame Utilities */
+.bg-harmonium-wood {
+  background-color: #1a120b;
+  background-image: linear-gradient(180deg, #281c12 0%, #181009 100%);
+}
+
+.bg-piano-frame {
+  background-color: #090d16;
+  background-image: linear-gradient(180deg, #131b2e 0%, #080c14 100%);
+}
+
+.bg-strings-frame {
+  background-color: #061912;
+  background-image: linear-gradient(180deg, #0e2e21 0%, #05140e 100%);
+}
+
+.bg-flute-frame {
+  background-color: #081717;
+  background-image: linear-gradient(180deg, #0d2828 0%, #051414 100%);
+}
+
+.border-brass {
+  border-color: #b45309;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0a08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #271e17;
+  border-radius: 3px;
+  border: 1px solid #78350f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #451a03;
+}
